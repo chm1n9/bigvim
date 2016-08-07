@@ -19,10 +19,10 @@ filetype plugin indent on
 syntax enable
 syntax on
 
-colorscheme solarized
-"colorscheme molokai
+"colorscheme solarized
+colorscheme molokai
 "colorscheme desert
-
+set guifont=Monaco\ for\ Powerline:h14
 set background=dark
 set t_Co=256
 set history=200           "history: number of command-lines remembered
@@ -44,7 +44,7 @@ set tm=500
 set nostartofline         " keep cursor postion when switching between buffers
 
 set number " show line number
-set nowrap " disable wrap
+set wrap " disable wrap
 
 "set list
 "set listchars=tab:›\ ,trail:•,extends:❯,precedes:❮
@@ -65,7 +65,7 @@ set foldlevel=99
 set smartindent       " Do smart autoindenting when starting a new line
 set autoindent        " always set autoindenting on
 
-set tabstop=4         " Number of spaces that a <Tab> in the file counts for.
+set tabstop=8         " Number of spaces that a <Tab> in the file counts for.
 set shiftwidth=4      " number of spaces to use for autoindenting
 set softtabstop=4     " Number of spaces that a <Tab> counts for while performing editing operations
 set smarttab
@@ -102,6 +102,8 @@ set backspace=eol,start,indent               " Configure backspace so it acts as
 set whichwrap+=<,>,h,l
 set pastetoggle=<F5>                         " when in insert mode, toggle between 'paste' and 'nopaste'
 
+"失焦自动保存
+autocmd FocusLost * silent! :update
 "let &colorcolumn="80,".join(range(120,999),",")
 let &colorcolumn="80"
 
@@ -141,7 +143,7 @@ inoremap <expr> <PageDown> pumvisible() ? "\<PageDown>\<C-p>\<C-n>" : "\<PageDow
 inoremap <expr> <PageUp>   pumvisible() ? "\<PageUp>\<C-p>\<C-n>" : "\<PageUp>"
 
 autocmd FileType python set tabstop=4 shiftwidth=4 expandtab ai
-autocmd FileType javascript,json,css,scss,html set tabstop=2 shiftwidth=2 expandtab ai
+autocmd FileType javascript,json,css,scss,html set tabstop=4 shiftwidth=4 expandtab ai
 
 autocmd BufReadPre * if getfsize(expand("%")) > 10000000 | syntax off | endif
 

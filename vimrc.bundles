@@ -38,6 +38,7 @@ Plug 'gcmt/wildfire.vim'
 Plug 'Raimondi/delimitMate'
 Plug 'alvan/vim-closetag'
 Plug 'mattn/emmet-vim'
+Plug 'plasticboy/vim-markdown'
 Plug 'terryma/vim-multiple-cursors'
 Plug 'tpope/vim-surround'
 Plug 'bronson/vim-trailing-whitespace'
@@ -63,6 +64,10 @@ Plug 'moll/vim-bbye'
 Plug 'tpope/vim-fugitive'
 Plug 'vim-scripts/BufOnly.vim'
 Plug 'junegunn/gv.vim'
+Plug 'pbrisbin/vim-mkdir'
+Plug 'tpope/vim-markdown'
+Plug 'suan/vim-instant-markdown'
+Plug 'danro/rename.vim'
 
 " theme
 Plug 'altercation/vim-colors-solarized'
@@ -140,6 +145,14 @@ let g:ctrlp_custom_ignore = {
     \ 'file': '\v\.(exe|so|dll|zip|tar|tar.gz)$',
     \ }
 let g:ctrlp_follow_symlinks=1
+
+" ----------------------------------------------------------------------------
+" markdown
+" ----------------------------------------------------------------------------
+"let g:vim_markdown_frontmatter=1
+
+
+
 
 " ----------------------------------------------------------------------------
 " ctrlp-funky
