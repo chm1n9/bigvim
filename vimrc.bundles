@@ -24,6 +24,8 @@ Plug 'vim-airline/vim-airline-themes'
 Plug 'gorodinskiy/vim-coloresque'
 Plug 'airblade/vim-gitgutter'
 Plug 'inside/vim-search-pulse'
+" git
+Plugin 'tpope/vim-fugitive'
 
 " fast move
 Plug 'vim-scripts/matchit.zip'
@@ -68,6 +70,8 @@ Plug 'pbrisbin/vim-mkdir'
 Plug 'tpope/vim-markdown'
 Plug 'suan/vim-instant-markdown'
 Plug 'danro/rename.vim'
+
+
 
 " theme
 Plug 'altercation/vim-colors-solarized'

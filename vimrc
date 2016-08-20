@@ -65,9 +65,10 @@ set foldlevel=99
 set smartindent       " Do smart autoindenting when starting a new line
 set autoindent        " always set autoindenting on
 
-set tabstop=8         " Number of spaces that a <Tab> in the file counts for.
+set tabstop=4         " Number of spaces that a <Tab> in the file counts for.
 set shiftwidth=4      " number of spaces to use for autoindenting
 set softtabstop=4     " Number of spaces that a <Tab> counts for while performing editing operations
+filetype indent on
 set smarttab
 set expandtab         " when typing <Tab>, use <space> instead
 set shiftround        " use multiple of shiftwidth when indenting with '<' and '>'
@@ -85,8 +86,10 @@ set scrolloff=7    " Set 7 lines to the cursor - when moving vertically using j/
 " File encode:encode for varied filetype
 set encoding=utf-8
 set fileencodings=utf-8,ucs-bom,cp936,gb18030,big5,euc-jp,euc-kr,latin1
-set helplang=en
+set helplang=cn
 set termencoding=utf-8
+
+let javascript_enable_domhtmlcss=1
 
 set ffs=unix,dos,mac         " Use Unix as the standard file type
 set formatoptions+=m
